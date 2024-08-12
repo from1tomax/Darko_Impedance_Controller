@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/model.h
+rtwtypes.h
+../include/rtwtypes.h
+eigen3/Eigen/Eigen
+-
+cstddef
+-
+cstdlib
+-
+
+../include/rtwtypes.h
+tmwtypes.h
+../include/tmwtypes.h
+
+../include/tmwtypes.h
+mwstdint.h
+../include/mwstdint.h
+limits.h
+-
+stdbool.h
+-
+float.h
+-
+stddef.h
+-
+
+/home/ubuntu/devel/whole_body_impedance_control/ModelTests/src/model.cpp
+iostream
+-
+cstring
+-
+cmath
+-
+model.h
+/home/ubuntu/devel/whole_body_impedance_control/ModelTests/src/model.h
+

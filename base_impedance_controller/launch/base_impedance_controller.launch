@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="base_impedance_controller_node" pkg="base_impedance_controller"
+    type="base_impedance_controller_node" output="screen" >
+    <rosparam  command="load"
+      file="$(find base_impedance_controller)/config/base_impedance_controller_config.yaml" />
+  </node>
+
+
+</launch>

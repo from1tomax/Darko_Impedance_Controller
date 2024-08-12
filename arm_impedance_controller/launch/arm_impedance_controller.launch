@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="arm_impedance_controller_node" pkg="arm_impedance_controller"
+    type="arm_impedance_controller_node" output="screen" >
+    <rosparam  command="load"
+      file="$(find arm_impedance_controller)/config/arm_impedance_controller_config.yaml" />
+  </node>
+
+
+</launch>
