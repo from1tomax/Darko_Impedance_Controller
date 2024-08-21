@@ -430,20 +430,20 @@ Eigen::VectorXd ImpedanceControl::whole_body_control_torque(Eigen::VectorXd q_a_
     // tau = null_space_torque(q_v, q_a, dq_v, dq_a, q_a_des) + impedance_control_torque();
     tau = impedance_control_torque();
 
-    if (tau(3,0) > 87) tau(3,0) = 87;
-    if (tau(3,0) < -87) tau(3,0) = -87;
-    if (tau(4,0) > 87) tau(4,0) = 87;
-    if (tau(4,0) < -87) tau(4,0) = -87;
-    if (tau(5,0) > 87) tau(5,0) = 87;
-    if (tau(5,0) < -87) tau(5,0) = -87;
-    if (tau(6,0) > 87) tau(6,0) = 87;
-    if (tau(6,0) < -87) tau(6,0) = -87;
-    if (tau(7,0) > 12) tau(7,0) = 12;
-    if (tau(7,0) < -12) tau(7,0) = -12;
-    if (tau(8,0) > 12) tau(8,0) = 12;
-    if (tau(8,0) < -12) tau(8,0) = -12;
-    if (tau(9,0) > 12) tau(9,0) = 12;
-    if (tau(9,0) < -12) tau(9,0) = -12;
+    // if (tau(3,0) > 87) tau(3,0) = 87;
+    // if (tau(3,0) < -87) tau(3,0) = -87;
+    // if (tau(4,0) > 87) tau(4,0) = 87;
+    // if (tau(4,0) < -87) tau(4,0) = -87;
+    // if (tau(5,0) > 87) tau(5,0) = 87;
+    // if (tau(5,0) < -87) tau(5,0) = -87;
+    // if (tau(6,0) > 87) tau(6,0) = 87;
+    // if (tau(6,0) < -87) tau(6,0) = -87;
+    // if (tau(7,0) > 12) tau(7,0) = 12;
+    // if (tau(7,0) < -12) tau(7,0) = -12;
+    // if (tau(8,0) > 12) tau(8,0) = 12;
+    // if (tau(8,0) < -12) tau(8,0) = -12;
+    // if (tau(9,0) > 12) tau(9,0) = 12;
+    // if (tau(9,0) < -12) tau(9,0) = -12;
     return tau;
 
 }
